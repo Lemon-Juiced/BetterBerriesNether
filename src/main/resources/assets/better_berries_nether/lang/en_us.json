@@ -1,0 +1,21 @@
+{
+  "item.better_berries_nether.baneberries": "Baneberries",
+  "item.better_berries_nether.beholderberries": "Beholderberries",
+  "item.better_berries_nether.biteberries": "Biteberries",
+  "item.better_berries_nether.bloatberries": "Bloatberries",
+
+  "item.better_berries_nether.ba_be_bi_medley": "Berry Medley",
+  "item.better_berries_nether.ba_be_bl_medley": "Berry Medley",
+  "item.better_berries_nether.ba_bi_bl_medley": "Berry Medley",
+  "item.better_berries_nether.be_bi_bl_medley": "Berry Medley",
+  "item.better_berries_nether.ba_be_bi_bl_medley": "Berry Medley",
+
+  "tooltip.better_berries_nether.berry_bane": "Killer healing",
+  "tooltip.better_berries_nether.berry_beholder": "Visible night",
+  "tooltip.better_berries_nether.berry_bite": "Hit like a truck",
+  "tooltip.better_berries_nether.berry_bloat": "Slow dive",
+  "tooltip.better_berries_nether.berry_generic": "A little bit evil",
+  "tooltip.better_berries_nether.irresistible_combination": "An Irresistible Evil Combination Of Berries!",
+
+  "itemGroup.better_berries_nether": "Better Berries Nether"
+}

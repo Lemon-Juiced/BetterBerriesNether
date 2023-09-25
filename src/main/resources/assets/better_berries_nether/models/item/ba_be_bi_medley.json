@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "better_berries_nether:item/ba_be_bi_medley"
+  }
+}
