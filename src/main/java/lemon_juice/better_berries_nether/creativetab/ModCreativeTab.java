@@ -26,22 +26,15 @@ public class ModCreativeTab {
             event.accept(ModItems.BITEBERRIES.get());
             event.accept(ModItems.BLOATBERRIES.get());
 
-            /*
-            event.accept(ModItems.BLACKBERRY_JUICE.get());
-            event.accept(ModItems.BLUEBERRY_JUICE.get());
-            event.accept(ModItems.GLOW_BERRY_JUICE.get());
-            event.accept(ModItems.MALOBERRY_JUICE.get());
-            event.accept(ModItems.RASPBERRY_JUICE.get());
-            event.accept(ModItems.SWEET_BERRY_JUICE.get());
+            event.accept(ModItems.BANEBERRY_JUICE);
+            event.accept(ModItems.BEHOLDERBERRY_JUICE);
+            event.accept(ModItems.BITEBERRY_JUICE);
+            event.accept(ModItems.BLOATBERRY_JUICE);
 
-
-            event.accept(ModItems.BLACKBERRY_SMOOTHIE.get());
-            event.accept(ModItems.BLUEBERRY_SMOOTHIE.get());
-            event.accept(ModItems.GLOW_BERRY_SMOOTHIE.get());
-            event.accept(ModItems.MALOBERRY_SMOOTHIE.get());
-            event.accept(ModItems.RASPBERRY_SMOOTHIE.get());
-            event.accept(ModItems.SWEET_BERRY_SMOOTHIE.get());
-             */
+            event.accept(ModItems.BANEBERRY_SMOOTHIE);
+            event.accept(ModItems.BEHOLDERBERRY_SMOOTHIE);
+            event.accept(ModItems.BITEBERRY_SMOOTHIE);
+            event.accept(ModItems.BLOATBERRY_SMOOTHIE);
 
             event.accept(ModItems.BA_BE_BI_MEDLEY.get());
             event.accept(ModItems.BA_BE_BL_MEDLEY.get());

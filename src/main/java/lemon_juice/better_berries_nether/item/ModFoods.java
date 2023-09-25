@@ -15,6 +15,24 @@ public class ModFoods {
     public static final FoodProperties BLOATBERRIES = berries(MobEffects.JUMP, MobEffects.MOVEMENT_SLOWDOWN, MobEffects.SLOW_FALLING,
             160, 60, 60).build();
 
+    public static final FoodProperties BANEBERRY_JUICE = juice(MobEffects.REGENERATION, MobEffects.POISON, MobEffects.WITHER,
+            160, 100, 100).build();
+    public static final FoodProperties BEHOLDERBERRY_JUICE = juice(MobEffects.NIGHT_VISION, MobEffects.BLINDNESS, MobEffects.DARKNESS,
+            600, 60, 60).build();
+    public static final FoodProperties BITEBERRY_JUICE = juice(MobEffects.DAMAGE_BOOST, MobEffects.DIG_SLOWDOWN, MobEffects.WEAKNESS,
+            200, 200, 200).build();
+    public static final FoodProperties BLOATBERRY_JUICE = juice(MobEffects.JUMP, MobEffects.MOVEMENT_SLOWDOWN, MobEffects.SLOW_FALLING,
+            160, 60, 60).build();
+
+    public static final FoodProperties BANEBERRY_SMOOTHIE = smoothie(MobEffects.REGENERATION, MobEffects.POISON, MobEffects.WITHER,
+            160, 100, 100).build();
+    public static final FoodProperties BEHOLDERBERRY_SMOOTHIE = smoothie(MobEffects.NIGHT_VISION, MobEffects.BLINDNESS, MobEffects.DARKNESS,
+            600, 60, 60).build();
+    public static final FoodProperties BITEBERRY_SMOOTHIE = smoothie(MobEffects.DAMAGE_BOOST, MobEffects.DIG_SLOWDOWN, MobEffects.WEAKNESS,
+            200, 200, 200).build();
+    public static final FoodProperties BLOATBERRY_SMOOTHIE = smoothie(MobEffects.JUMP, MobEffects.MOVEMENT_SLOWDOWN, MobEffects.SLOW_FALLING,
+            160, 60, 60).build();
+
     public static final FoodProperties BA_BE_BI_MEDLEY = medley(
             MobEffects.REGENERATION, MobEffects.POISON, MobEffects.WITHER,
             MobEffects.NIGHT_VISION, MobEffects.BLINDNESS, MobEffects.DARKNESS,
@@ -67,6 +85,16 @@ public class ModFoods {
                 .effect(new MobEffectInstance(effect3, 1, time3), .15f);
     }
 
+    private static FoodProperties.Builder juice(MobEffect effect1, MobEffect effect2, MobEffect effect3, int time1, int time2, int time3) {
+        return (new FoodProperties.Builder())
+                .nutrition(4)
+                .saturationMod(0.2F)
+                .alwaysEat()
+                .effect(new MobEffectInstance(effect1, 1, time1), 1f)
+                .effect(new MobEffectInstance(effect2, 1, time2), .75f)
+                .effect(new MobEffectInstance(effect3, 1, time3), .15f);
+    }
+
     private static FoodProperties.Builder medley(MobEffect effect1, MobEffect effect2, MobEffect effect3, MobEffect effect4, MobEffect effect5, MobEffect effect6, MobEffect effect7, MobEffect effect8, MobEffect effect9, int time1, int time2, int time3, int time4, int time5, int time6, int time7, int time8, int time9) {
         return (new FoodProperties.Builder())
                 .nutrition(5)
@@ -98,5 +126,15 @@ public class ModFoods {
                 .effect(new MobEffectInstance(effect10, 1, time10), 1f)
                 .effect(new MobEffectInstance(effect11, 1, time11), .75f)
                 .effect(new MobEffectInstance(effect12, 1, time12), .15f);
+    }
+
+    private static FoodProperties.Builder smoothie(MobEffect effect1, MobEffect effect2, MobEffect effect3, int time1, int time2, int time3) {
+        return (new FoodProperties.Builder())
+                .nutrition(5)
+                .saturationMod(0.3F)
+                .alwaysEat()
+                .effect(new MobEffectInstance(effect1, 1, time1), 1f)
+                .effect(new MobEffectInstance(effect2, 1, time2), .75f)
+                .effect(new MobEffectInstance(effect3, 1, time3), .15f);
     }
 }
