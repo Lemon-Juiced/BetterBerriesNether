@@ -56,7 +56,7 @@ public class BaneberryBushBlock extends BushBlock implements BonemealableBlock {
     }
 
     protected boolean mayPlaceOn(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos) {
-        return blockState.is(Blocks.SOUL_SAND);
+        return blockState.is(Blocks.SOUL_SAND) || blockState.is(Blocks.CRIMSON_NYLIUM) || blockState.is(Blocks.WARPED_NYLIUM);
     }
 
     public boolean isRandomlyTicking(BlockState blockState) {
