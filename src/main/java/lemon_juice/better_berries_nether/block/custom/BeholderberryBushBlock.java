@@ -18,6 +18,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.BushBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -54,6 +55,10 @@ public class BeholderberryBushBlock extends BushBlock implements BonemealableBlo
         }
     }
 
+    protected boolean mayPlaceOn(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos) {
+        return blockState.is(Blocks.SOUL_SAND);
+    }
+
     public boolean isRandomlyTicking(BlockState blockState) {
         return blockState.getValue(AGE) < 3;
     }
@@ -66,7 +71,6 @@ public class BeholderberryBushBlock extends BushBlock implements BonemealableBlo
             serverLevel.gameEvent(GameEvent.BLOCK_CHANGE, blockPos, GameEvent.Context.of(blockstate));
             net.minecraftforge.common.ForgeHooks.onCropsGrowPost(serverLevel, blockPos, blockState);
         }
-
     }
 
     public void entityInside(BlockState blockState, Level level, BlockPos blockPos, Entity entity) {
@@ -79,7 +83,6 @@ public class BeholderberryBushBlock extends BushBlock implements BonemealableBlo
                     entity.hurt(level.damageSources().sweetBerryBush(), 1.0F);
                 }
             }
-
         }
     }
 
