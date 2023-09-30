@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "better_berries_nether:beholderberries"
+    },
+    {
+      "item": "better_berries_nether:biteberries"
+    },
+    {
+      "item": "better_berries_nether:bloatberries"
+    }
+  ],
+  "result": {
+    "item": "better_berries:be_bi_bl_medley",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:nether_berry_biomes",
+  "features": "better_berries_nether:beholderberry_bush_placed",
+  "step": "vegetal_decoration"
+}
