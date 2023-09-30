@@ -3,6 +3,7 @@ package lemon_juice.better_berries_nether;
 import lemon_juice.better_berries_nether.block.ModBlocks;
 import lemon_juice.better_berries_nether.creativetab.ModCreativeTab;
 import lemon_juice.better_berries_nether.item.ModItems;
+import lemon_juice.better_berries_nether.util.ModCompostables;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -36,7 +37,7 @@ public class BetterBerriesNether {
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             //Register Compostables
-            //ModCompostables.setup(event);
+            ModCompostables.setup(event);
         });
     }
 

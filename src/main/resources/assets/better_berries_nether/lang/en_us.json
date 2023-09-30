@@ -20,6 +20,11 @@
   "item.better_berries_nether.be_bi_bl_medley": "Berry Medley",
   "item.better_berries_nether.ba_be_bi_bl_medley": "Berry Medley",
 
+  "block.better_berries_nether.baneberry_bush": "Baneberry Bush",
+  "block.better_berries_nether.beholderberry_bush": "Beholderberry Bush",
+  "block.better_berries_nether.biteberry_bush": "Biteberry Bush",
+  "block.better_berries_nether.bloatberry_bush": "Bloatberry Bush",
+
   "tooltip.better_berries_nether.berry_bane": "Killer healing",
   "tooltip.better_berries_nether.berry_beholder": "Visible night",
   "tooltip.better_berries_nether.berry_bite": "Hit like a truck",
